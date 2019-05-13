@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int v,w,x,y,z;
+	
+
+	
+	cout << "Fibonacci: ";
+    w = 22;
+    x = 1;
+    y = 0; 
+	
+	
+	for (v=0;v<w;v++)
+	{
+	    if (v<=1)
+	    z=v;
+	    
+	    else 
+	    {
+	        z = x + y;
+	        y = x;
+	        x = z;
+	    }
+	    cout << z << ", ";
+	    }  
+	return 0;
+}

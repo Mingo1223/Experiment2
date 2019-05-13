@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x,y,z;
+	bool userquit = false;
+
+do	
+{
+	z=0;
+	cout <<"Enter a number:";
+	cin >> y;
+	{
+		if (y<1)
+			{
+				cout<<"Invalid";
+			userquit=true;
+			}
+		else
+			{
+				for(x=1; x <= y; ++x)
+				{
+					z += x;
+				}
+					cout << z <<endl;
+			}
+	}
+} 
+while (!userquit);
+	
+	return 0;
+}
